@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hgjhx</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style-reg.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="nav-menu">
+				<a href="index.html" id="logo-a">
+					<div id="logo">
+						<img src="img/logo.jpg" style="height: 100px ">
+					</div>
+				</a>
+				<div id="name">
+					<p>
+						<h2>Bidhan chandra roy college</h2>
+						<h4> kalyani , nadia</h4>
+					</p>
+				</div>
+				<div class="contect">
+					<a href="" class="fa fa-facebook"><span></span></a>
+					<a href="" class="fa fa-instagram"><span></span></a>
+					<a href="" class="fa fa-youtube"><span></span></a>
+					<a href="login.html" id="login"><span>log out</span></a>
+				</div>
+			</div><!--nav-menu-->
+	</header>
+
+
+
+	<div class="container" id="test">
+		<div class="reg-form-title"> 
+			<h2> Examination Form</h2>
+		</div>
+		<div class="form-name">
+			<img src="icons/details.svg" style="width: 70px">
+			<h2>Personal <br>Details</h2>
+		</div>
+		<div class="details">
+			<section class="sec">
+
+				<label for="Fast Name"><span class="note">*</span> Name :</label>
+				<input type="text" name="Fast_Name" placeholder="Fast Name" id="fast-name">
+
+				<label for="Fast Name"><span class="note">*</span>Last Name :</label>
+				<input type="text" name="Fast_Name" placeholder="Last Name" id="last-name">
+			</section>
+
+			<section class="sec">
+				<label for="Date of Birth"> <span class="note">*</span>Date of Birth :</label>
+				<input type="date" name="Date_of_Birth" id="dob">
+
+				<label for="Category"><span class="note">*</span>Sex :</label>
+				<select name="Category">
+					<option value="F">F</option>
+					<option value="M">M</option>
+				</select>
+			</section>
+
+			<section class="sec">
+				<label for="Category"><span class="note">*</span>Category :</label>
+				<select name="Category">
+					<option value="Others">Others</option>
+					<option value="SC">SC</option>
+					<option value="ST">ST</option>
+					<option value="OBC-A">OBC-A</option>
+					<option value="OBC-B">OBC-B</option>
+				</select>
+
+				<label for="Nationlity"><span class="note">*</span>Nationlity :</label>
+				<select name="Category">
+					<option value="Others">Others</option>
+					<option value="S">Indian</option>
+				</select>
+			</section>
+
+			<section class="sec">
+				<label for="phone_number"><span class="note">*</span>Phone Number :</label>
+				<input type="text" name="phone_number" id="phone-no">
+				<label for="Fast Name"><span class="note">*</span>Father Name :</label>
+				<input type="text" name="Father_Name" placeholder="Father Name" id="father-name">
+				
+			</section>
+		</div>	
+			
+	</div>
+				
+<!--parsonal details-->
+	
+	</div>
+	<div class="container" id="test">
+		<div class="form-name">
+			<img src="icons/house.svg" style="width: 70px">
+			<h2>Present <br>Address</h2>
+		</div>
+		<div class="details">
+			<section class="sec">
+				<label for="address_line1">Address Line1 :</label>
+				<input type="next" name="address_line1" id="address-line1">
+
+				<label for="address_line2">Address Line2 :</label>
+				<input type="next" name="address_line2" id="address-line2">
+			</section>
+
+			<section class="sec">
+				<label for="address_line3">Address Line3 :</label>
+				<input type="next" name="address_line3" id="address-line3">
+					
+			</section>
+
+			<section class="sec">
+				<label for="state"><span class="note">*</span>State</label>
+				<input type="text" name="state" id="state">
+				<label for="pin_no"><span class="note">*</span>Pin No :</label>
+				<input type="number" name="pin_no" id="pin"> 
+			</section>
+
+			<section class="sec">
+				
+				<label for="distrct"><span class="note">*</span>District :</label>
+				<input type="next" name="district" id="dist">
+				<label for="email"><span class="note">*</span>Email :</label>
+				<input type="email" name="email" id="email">
+			</section>
+		</div>		
+		<section class="res-address">
+				<input type="checkbox" name="" onclick="addressFunction()">
+				<label>Residential Address ?</label>
+		</section>
+	</div>
+
+	<div class="container" id="test">
+		<div class="form-name">
+			<img src="icons/house.svg" style="width: 70px">
+			<h2>Residential <br>Address</h2>
+		</div>
+		<div class="details">
+			<section class="sec">
+				<label for="address_line1">Address Line1 :</label>
+				<input type="next" name="address_line1" id="res-address-line1">
+
+				<label for="address_line2">Address Line2 :</label>
+				<input type="next" name="address_line2" id="res-address-line2">
+			</section>
+
+			<section class="sec">
+				<label for="address_line3">Address Line3 :</label>
+				<input type="next" name="address_line3" id="res-address-line3">
+					
+			</section>
+
+			<section class="sec">
+				<label for="state"><span class="note">*</span>State</label>
+				<input type="text" name="state" id="res-state">
+				<label for="pin_no"><span class="note">*</span>Pin No :</label>
+				<input type="number" name="pin_no" id="res-pin">
+			</section>
+
+			<section class="sec">
+				
+				<label for="distrct"><span class="note">*</span>District :</label>
+				<input type="next" name="district" id="res-dist">
+				<label for="email"><span class="note">*</span>Email :</label>
+				<input type="email" name="email" id="res-email">
+			</section>
+		</div>		
+	</div>
+	<!--end address-->
+
+
+	<div class="container" id="test">
+		<div class="form-name">
+			<img src="icons/course.svg" style="width: 70px">
+			<h2>Course <br>Details</h2>
+		</div>
+		<div class="details">
+			<section class="sec">
+				<label for="department_name"><span class="note">*</span>Department Name :</label>
+				<input type="text" name="department_name" id="department-name">	
+				<label for="course"><span class="note">*</span>Course :</label>
+				<select id="course">
+					<option value="MCA">MCA</option>
+					<option value="M.Tech">M.Tech</option>
+					<option value="MA">MA</option>
+					<option value="M.Sc">M.Sc</option>
+					<option value="MBA">MBA</option>
+					<option value="M.Com">M.Com</option>
+				</select>
+			</section>
+
+			<section class="sec">
+				<label for="registration_no"><span class="note">*</span>Registration No :</label>
+				<input type="number" name="registration_no" id="reg-no"> 
+				<label for="start_year"><span class="note">*</span>Start Year :</label>
+				<input type="number" name="start_year" id="start-year">			
+			</section>
+
+			<section class="sec">
+				<label for="roll"><span class="note">*</span>Roll :</label>
+				<input type="number" name="roll" id="roll">	
+				<label for="roll_no"><span class="note">*</span>No :</label>
+				<input type="number" name="roll_no" id="roll-no">
+			</section>
+
+			<section class="sec">
+				<label for="last_exm_sem"><span class="note">*</span>Last Sem.:</label>
+				<select id="last_exm_sem">
+					<option value="1st">1st</option>
+					<option value="2nd">2nd</option>
+					<option value="3rd">3rd</option>
+					<option value="4th">4th</option>
+					<option value="5th">5th</option>
+					<option value="6th">6th</option>
+					<option value="7th">7th</option>
+				</select>	
+				<label for="apply_for"><span class="note">*</span>Apply For Admission:</label>
+				<select>
+					<option value="1st">1st sem.</option>
+					<option value="2nd">2nd sem.</option>
+					<option value="3rd">3rd sem.</option>
+					<option value="4th">4th sem.</option>
+					<option value="5th">5th sem.</option>
+					<option value="6hh">6th sem.</option>
+					<option value="7th">7th sem.</option>
+					<option value="8th">8th sem.</option>
+				</select>	
+			</section>
+		</div>
+	</div>
+	<div class="mark">
+		<span>
+			* mark are requred
+		</span>
+	</div>
+	
+	<section class="save-next">
+				
+				<label><a  onclick="myFunction()">save & next</a></label>
+	</section>
+
+	<footer>
+		<div class="footer1">
+			<section class="maintain footer-sec">
+				<h4>Maintained By</h4>
+				<h5>Department of CSE</h5>
+				<div class="group">
+					<img src="icons/team-work.svg" style="width: 3em"><br>
+					<span>Antara Das</span><br>
+					<span>Debadrita Saha</span><br>
+					<span>Chayan Pramanik</span>
+				</div>
+			</section>
+			<section class="copyright footer-sec">
+				<span>copyright@2020,universty of kalyani</span>
+			</section>
+			<section class="contacts footer-sec">
+				<h4>Contacts</h4><br>
+				<a href="" class="number"><span>+91 9002343219</span></a><br><br>
+				<a href="" class="email"><span>abc@gmail.com</span></a><br><br>
+				<a href="" class="fa fa-facebook"><span></span></a>
+				<a href="" class="fa fa-instagram"><span></span></a>
+				<a href="" class="fa fa-youtube"><span></span></a>
+			</section>
+
+		</div>
+	</footer>
+	<script src="script-reg.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,153 @@
+#login-container{
+	position: relative;
+	padding: 5em 0 5em;
+}
+#login-container:before{
+	top: 0;
+	content: ' ';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url(img/picture10.webp);
+	opacity: .5;
+	-ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+}
+.container >h2{
+	position: relative;
+	padding: .5em 0 .5em;
+	margin-top: 0em;
+	width: 100%;
+	color:#17202A;
+	font-size: 2em;
+	width: 35%;
+	text-align: center;
+	margin-left: 50%;
+	border: 2px solid #48C9B0;
+	border-radius: 20px  ;
+	text-transform: uppercase; 
+}
+.container .row1{
+	position: relative;
+	display: grid;
+	margin-left: 50%;
+	width: 35%;
+	grid-template-columns: auto;
+	background-color:;
+	border-radius: 20px ;
+	border: 2px solid #48C9B0;
+}
+.col{
+	position: relative;
+	width: 100%;
+	margin: 30px 0px 20px;
+}
+.inputbox{
+	position: relative;
+	width: 70%;
+	margin:  0 14% 0;
+	color:#17202A;
+	height: 2.2em;
+}
+.inputbox input{
+
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding-left:10px;
+	margin: 0;
+	font-size: 1.1em;
+	border: none;
+	outline: none;
+	transition:;
+	background: transparent;
+	z-index: 1;
+	color: #EAEDED;
+	transition: .7s;
+}
+.inputbox .text{
+	letter-spacing: 2px;
+	transition: .7s;
+	position: absolute;
+	bottom: 2px;
+	left: 5px;
+	line-height: 1em;
+	font-size: 1.2em;
+}
+.line{
+	position: absolute;
+	display:block;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	border-radius: 10px;
+	transition: .5s;
+	background-color: #0D8BDE ;
+	
+}
+.inputbox input:focus +.text,
+.inputbox input:valid +.text
+{
+	bottom:100%;
+	left:0px;
+	
+}
+.inputbox input:focus ~.line,
+.inputbox input:valid ~.line
+{
+	height: 90%;
+	
+}
+.view{
+	position: absolute;
+	margin-top: .5em;
+	margin-left: 90%;
+	float:right;
+	display:none;
+	z-index: 2;
+	cursor: pointer;
+}
+.inputbox input:focus ~.view,
+.inputbox input:valid ~.view
+{
+	display: block;
+	
+}
+
+.row1 >a{
+	margin: 0 5em .5em;
+	padding: .1em;
+	text-decoration: none;
+	text-align: center; 
+	text-transform: uppercase;
+	color:#17202A; 
+	border-radius: 10px;
+	word-spacing: 2px;
+	border:1px solid #0D8BDE;
+}
+.row1 a:hover{
+	background-color: #0D8BDE;
+	color: #EAEDED;
+	border:1px solid #EAEDED;
+}
+
+.login-btn {
+	margin: 1em 5em 1.3em;
+	padding: 0;
+	text-align: center; 
+}
+.login-btn a{
+	border-radius: 10px;
+	word-spacing: .2em;
+	letter-spacing: .1em;
+	border:1px solid #0D8BDE;
+	text-decoration: none;
+	text-transform: uppercase;
+	color:#17202A; 
+	padding: .3em;
+}
+

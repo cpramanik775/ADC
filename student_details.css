@@ -1,0 +1,110 @@
+#std{
+	position: relative;
+	padding: 0px;
+	height: 70em;
+	background-color:;
+}
+
+.stb-details-title{
+	position:relative;
+	background-color: #F5E985;
+	color:#0B0A01;
+	padding: 10px;
+	right:0;
+	margin-top: 1.5em;
+	text-align: center;
+	font-size: 20px;
+}
+
+.card{
+	position: relative;
+	float: left;
+	margin: 5em 15% 5em;
+	cursor: pointer;
+	width: 20%;
+	height: 25em;
+	padding: 0;
+	
+}
+
+.front , .back{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	backface-visibility:hidden;
+	transition: .7s linear;
+	border-radius: 10%;
+}
+.front{
+	background-color: #75DEB3 ;
+	box-shadow: 0px 0px 3px 3px #031E12;
+	-ms-transform: perspective(700px) rotateY(0deg);/* IE 9 */
+	 -webkit-transform: perspective(700px) rotateY(0deg);
+	 transform: perspective(700px) rotateY(0deg);
+}
+.front-content{ 
+	position: relative;
+	text-align:center;
+	height: 100%;
+	text-transform: uppercase;
+	
+}
+.front-content img{ 
+	margin-top: 70px;
+	
+}
+
+.front-content span{
+	position:absolute;
+  	bottom: 60px;
+  	right: 0;
+  	width: 100%;
+  	text-align: center;
+  	font-size: 1.5em;
+  	text-transform: uppercase;
+  	background-color: #06131E;
+  	color: #fff;
+  	opacity: .4;
+
+}
+
+
+
+.back{
+	background-color: #EBF6F1;
+	-ms-transform: perspective(650px) rotateY(180deg);/* IE 9 */
+	 -webkit-transform: perspective(650px) rotateY(180deg);
+	 transform: perspective(650px) rotateY(180deg);
+}
+.back-content{
+	margin:1em; 
+	position: relative;
+	text-align: center;
+	margin-top: 50px;
+	text-transform: uppercase;
+}
+
+.back-content a{
+	text-decoration: none;
+	font-size: 1.2em;
+	display: block;
+	color: #031E12 ;
+	padding: .5em;
+	border-radius: 30%;
+}
+.back-content a:hover{
+	color: #EBF6F1;
+	background-color:#031E12; 
+}
+.card:hover>.front{
+	-ms-transform: perspective(650px) rotateY(-180deg);/* IE 9 */
+	 -webkit-transform: perspective(650px) rotateY(-180deg);
+	 transform: perspective(650px) rotateY(-180deg);
+}
+
+.card:hover>.back{
+	-ms-transform: perspective(650px) rotateY(0deg);/* IE 9 */
+	 -webkit-transform: perspective(650px) rotateY(0deg);
+	 transform: perspective(650px) rotateY(0deg);
+	box-shadow: 2px 2px  10px 10px #031E12;
+}

@@ -1,0 +1,80 @@
+#test{
+	margin-top: 3em;
+	padding: 0 5em 2em;
+}
+.reg-form-title{
+	margin: 3em;
+	border: 1px solid #76D7C4;
+	text-align: center;
+}
+.form-name{
+	position:absolute;
+	width:10em;
+	height: 14.5em;
+	padding:1em;
+	margin-top:1.1em;
+	z-index:1;
+	background-color: #0879F1;
+	color: #F5F8FB ;
+	border-radius: 10%;
+	text-align: center;
+	box-shadow: 0 0 25px 3px #CB4335 ;
+}
+.form-name img{
+	margin-top:1.6em; 
+}
+.details{
+	position: relative;
+	box-shadow: 0 0 20px 3px #0879F1;
+	margin-left: 6em;
+	padding: 1em;
+}
+
+.sec{
+	position: relative;
+	margin: 2.2em 0 2.2em 5em;
+}
+.sec input ,select{
+	border: .1em solid #0879F1;
+	outline: none;
+	font-size: 1em;
+	padding:.1em;
+}
+.sec label{
+	font-size: 1em;
+	color:#16A085;
+	margin-left:8em; 
+	font-style:italic;
+}
+.res-address{
+	text-align: center;
+	margin: 3em 20em 0em;
+	box-shadow: 0 0 5px 3px #34495E;
+	padding: .5em;
+	color: #16A085;
+}
+.save-next{
+	position: relative;
+	text-align: center;
+	margin: 3em 36em 0em;
+	padding:.5em;
+	color: #16A085;
+}
+.save-next a{
+	text-decoration: none;
+	text-transform: uppercase;
+	margin: 0;
+	padding: .6em;
+	box-shadow: 0 0 5px 3px #34495E;
+	color: #16A085;
+	font-size: 1em;
+}
+.save-next a:hover{
+	box-shadow: none;
+	color:#FDFEFE ;
+	background-color: #34495E;
+}
+.mark {
+	text-align: center;
+	color: red;
+}

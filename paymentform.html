@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>DOCUMENT</title>
+	<link rel="stylesheet" type="text/css" href="paymentform.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div id="nav-menu">
+				<a href="index.html" id="logo-a">
+					<div id="logo">
+						<img src="/home/cpramanik/HTMLCSSJS/assignment1/img/logo.jpg" style="height: 100px ">
+					</div>
+				</a>
+				<div id="name">
+					<p>
+						<h2>university of kalyani</h2>
+						<h4> kalyani , nadia</h4>
+					</p>
+				</div>
+				<div class="contect">
+					<a href="" class="fa fa-facebook"><span></span></a>
+					<a href="" class="fa fa-instagram"><span></span></a>
+					<a href="" class="fa fa-youtube"><span></span></a>
+					<a href="login.html" id="login"><span>log out</span></a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+			<div class="wrapper">
+				<h2>Payment Form</h2>
+				<form class="form1" method="POST">
+					<h4>Account</h4>
+					<div class="input-group">
+						<div class="input-box">
+							<i class="fa fa-user icon"></i>
+							<input type="text" placeholder="Full Name" required class="name">
+							
+						</div>
+					</div>
+					<div class="input-group">
+						<div class="input-box">
+							<i class=" fa fa-envelope"></i>
+							<input type="email" placeholder="Email Adress" required class="name">
+							
+						</div>
+					</div>
+					<div class="input-group">
+						<div class="input-box">
+							<h4>Date Of Birth</h4>
+                            <input type="text" placeholder="DD" class="dob">
+							<input type="text" placeholder="MM" class="dob">
+							<input type="text" placeholder="YYYY" class="dob">
+						</div>
+						<div class="input-box">
+							<h4>Gender</h4>
+							<input type="radio" id="b1" name="Gender" checked class="radio">
+							<label for="b1">Male</label>
+							<input type="radio" id="b2" name="Gender" checked class="radio">
+							<label for="b2">Female</label>
+						</div>
+					</div>
+					<div class="input-group">
+						<div class="input-box">
+							<h4>Payment Details</h4>
+							<input type="radio" name="pay" id="bc1" checked class="radio">
+							<label for="bc1"><span><i class="fa fa-cc-visa"></i>Credit Card</span></label>
+							<input type="radio" name="pay" id="bc2" checked class="radio">
+							<label for="bc2"><span><i class="fa fa-cc-paypal"></i>Paypal</span></label>
+						</div>
+					</div>
+					<div class="input-group">
+						<div class="input-box">
+							<i class="fa fa-credit-card icon"></i>
+							<input type="tel" placeholder="Card Number" required class="name">
+							
+						</div>
+					</div>
+					<div class="input-group">
+						<div class="input-box">
+							<i class="fa fa-user icon"></i>
+							<input type="tel" placeholder="Card CVC" required class="name">
+							
+						</div>
+						<div class="input-box">
+							<select>
+								<option>01 nov</option>
+								<option>02 nov</option>
+								<option>03 nov</option>
+							</select>
+							<select>
+								<option>2023</option>
+								<option>2024</option>
+								<option>2025</option>
+							</select>
+						</div>
+					</div>
+					<div class="input-group">
+						<div class= "input-box">
+							<button type="submit">PAY NOW</button>
+						</div>
+					</div>
+				</form>
+				
+			</div>
+	<!------start footer-------------->
+	<footer>
+		<div class="footer1">
+			<section class="maintain footer-sec">
+				<h4>Maintained By</h4>
+				<h5>Department of CSE</h5>
+				<div class="group">
+					<img src="/home/cpramanik/HTMLCSSJS/assignment1/icons/team-work.svg" style="width: 3em"><br>
+					<span>Antara Das</span><br>
+					<span>Debadrita Saha</span><br>
+					<span>Chayan Pramanik</span>
+				</div>
+			</section>
+			<section class="copyright footer-sec">
+				<span>copyright@2020,universty of kalyani</span>
+			</section>
+			<section class="contacts footer-sec">
+				<h4>Contacts</h4><br>
+				<a href="" class="number"><span>+91 9002343219</span></a><br><br>
+				<a href="" class="email"><span>abc@gmail.com</span></a><br><br>
+				<a href="" class="fa fa-facebook"><span></span></a>
+				<a href="" class="fa fa-instagram"><span></span></a>
+				<a href="" class="fa fa-youtube"><span></span></a>
+			</section>
+		</div>
+	</footer>
+	<!-----end footer--------------------->
+	</body>
+</html>

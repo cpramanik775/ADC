@@ -1,0 +1,114 @@
+
+body{
+	background-color:;
+	font-family: arial,helvetica,sans-serif;
+}
+.wrapper{
+	background-color: #E5C3A2;
+	width: 500px;
+	padding: 25px;
+	margin: 25px auto 0;
+	box-shadow: 0px 0px 30px rgba(5 5 0 5);
+}
+.wrapper >h2{
+	background-color: #FFA07A;
+	color: #CB1A7B;
+	font-size: 25px;
+	padding: 10px;
+	margin-bottom: 20px;
+	text-align: center;
+	border: 3px dotted #888;
+}
+.form1 >h4{
+	padding-bottom: 5px;
+	color: blue;
+}
+.input-box >h4{
+	padding-bottom: 5px;
+	color: blue;
+}
+.input-group{
+	margin-bottom: 10px;
+	width: 300px;
+	box-shadow: 50px;
+	position: relative;
+}
+.input-box{
+	width: 500px;
+	margin-right: 65px;
+	position: relative;
+}
+.input-box>i{
+	background-color: #fcfcfc;
+	padding: .5em;
+}
+.name{
+	padding: 14px 10px 14px 50px;
+	width: 400px;
+	background-color: #fcfcfc;
+	border: 1px solid #00000033;
+	outline: none;
+	letter-spacing : 1px;
+	transition: 0.3s;
+	border-radius: 3px;
+	color :#333;
+}
+.name.focus, .dob.focus{
+	-webkit-box-shadow: 0 0 2px 1px #96DFA9;
+	-moz-box-shadow: 0 0 2px 1px #96DFA9;
+	box-shadow: : 0 0 2px 1px #96DFA9;
+	border: 1px solid ##470419;
+
+}
+.input-box.icon{
+	width: 48px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: absolute;
+	top: 0px;
+	left:30px;
+	right: 0px;
+	bottom:0px;
+	color:#999;
+	background-color: ##230847;
+	border-radius: 2px 0 0 2px;
+	transition: 0.5px;
+	font-size: 20px;
+	pointer-events: none;
+	border: 2px solid #000000033;
+	border-right: none;
+}
+.dob{
+	width: 100px;
+	padding:10px;
+	text-align: center;
+	background-color: #fcfcfc;
+	transition: 0.3s;
+	outline: none;
+	border: 2px solid #c0bf45;
+	border-radius: 3px;
+}
+.input-box select.focus{
+	background-color: green;
+	color: #fff;
+	text-align: center;
+
+}
+button{
+	margin-left: 2.5em;
+	width: 400px;
+	background: transparent;
+	border: none;
+	background: green;
+	color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	font-size: 20px;
+	transition: all o.35s ease;
+}
+button.hover{
+	cursor: pointer;
+	background: green;
+	
+}

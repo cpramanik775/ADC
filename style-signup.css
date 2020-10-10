@@ -1,0 +1,174 @@
+#signup-container
+{
+	position: relative;
+  	padding: 5em 0 10em;
+}
+#signup-container:before{
+	top: 0;
+	content: ' ';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url(picture5.jpg);
+	opacity: .5;
+}
+.container >h2{
+	position: relative;
+	padding: 1em 1em 1em;
+	margin: .5em 34% .5em;
+	color:#B1564B ;
+	font-size: 2em;
+	
+	text-align: center;
+	
+	margin-left: 35%;
+	background-color:#F5B7B1 ;
+	border-radius: 20px  ;
+	text-transform: uppercase; 
+}
+	
+.container .row{
+	padding: 1em;
+	position: relative;
+    margin: 0;
+	display: grid;
+	margin-left: 3%;
+	width: 35%;
+	grid-template-columns: auto;
+	background-color:#1ABC9C;
+	border-radius: 20px ;
+}
+.container .column{
+	position: relative;
+	margin : 1em 0 2em;
+	width: 100%;
+
+}	
+.inputbox1 {
+	position: relative;
+	width: 80%;
+	margin: 0 10% 0;
+    color: #641E16 ;
+    height:2em;
+}
+.inputbox1 input{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding-left: 1em;
+	margin: 0;
+	font-size: 1.2em;
+	border: none;
+	outline: none;
+	transition: .5s;
+	background-color:transparent;
+	color: #17202A ;
+	z-index: 1;
+}
+ .inputbox1 .text1{
+ 	position: absolute;
+    bottom: 2px;
+	left: 5px;
+	line-height: 1em;
+	font-size: 1.3em;
+	letter-spacing: 2px;
+	transition: .5s;
+
+ }
+ .inputbox1 .line1{
+	position: absolute;
+	display:block;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	border-radius: 10px;
+	background-color: #CCD1D1 ;
+	transition: .5s;
+	}
+
+	.inputbox1 input:focus +.text1,
+    .inputbox1 input:valid +.text1
+    {
+	bottom:100%;
+	left:0px;
+	
+}
+    .inputbox1 input:focus ~.line1,
+.inputbox1 input:valid ~.line1
+{
+	height: 90%;
+	
+}
+
+.view{
+	position: absolute;
+	margin-top: .5em;
+	margin-left: 90%;
+	float:right;
+	display:none;
+	z-index: 2;
+	cursor: pointer;
+}
+.inputbox1 input:focus ~.view,
+.inputbox1 input:valid ~.view
+{
+	display: block;
+	
+}
+.container .row2{
+	padding: 0em;
+    position: relative;
+    font-size: 1.1em;
+	margin:1em 2em 0em 45em;
+	background-color:#839192;
+	border-radius: 20px ;
+	text-align: center;
+}
+.container .row2 >label{
+	position: relative;
+	font-size: .7em;
+	padding: .5em;
+	margin-bottom: 1em;
+}
+.container .row2 .signup-btn{
+	position: relative;
+	padding: .5em;
+	margin-top: 1em;
+}
+.container .row2 .signup-btn>a{
+	position: relative;
+	text-decoration: none;
+	font-size: 1.5em;
+	padding: .2em;
+	border-radius: 25%;
+	color:#17202A  ;
+}
+.container .row2 .signup-btn>a:hover{
+	background-color: #F9EBEA ;
+	color:#2B2D30 ;
+}
+.input-check{
+	padding: .3em;
+	display: none;
+	margin-left: 3.5em;
+	position:absolute;
+}
+.input-check span{
+	text-align: center;
+	font-size: .8em;
+}
+
+.valid{
+	color: green;
+}
+.invalid{
+	color: red;
+}
+
+#not-match ,#invalid-mail{
+	color: red;
+}
+#match,#valid-mail{
+	color: green;
+	display: none;
+}

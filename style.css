@@ -1,0 +1,349 @@
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.container{
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	height: auto;
+
+}
+#nav-menu{
+	position: relative;
+	height: 150px;
+	text-align:;
+}
+#logo-a{
+	position: relative;
+	float: left;
+	padding: 20px;
+}
+#name{
+	text-transform: uppercase;
+	float: left;
+}
+
+.contect{
+	float: right;
+	margin-top: 80px;
+	margin-right: 90px;
+	font-size: 20px;
+	background-color:;
+	padding: 10px;
+
+}
+#login{
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color:#3BE6A3;
+	padding: 8px;
+	border-radius: 10px;
+} 
+
+.fa{
+	padding: 10px;
+  	border-radius: 10px;
+  	text-decoration: none;
+}
+.fa-facebook{
+	background-color: #0B7EF1;
+	color: #F3E9ED ;
+}
+.fa-instagram{
+	background-color: #F31066;
+	color: #F3E9ED ;
+}
+.fa-youtube{
+	background-color: #BB3008;
+	color: #F3E9ED ;
+}
+.contect a:hover{
+	opacity: .4;
+}
+/*****end nav-menu****/
+/*****start nav-sub-menu**********/
+.nav-sub-menu{
+	position: relative;
+	background-color:rgb(35, 199, 177);
+}
+
+.menu{
+	position: relative;
+	height: 2.4em;
+	padding: .1em;
+	margin: 0;
+
+}
+.menu >li{
+	position: relative;
+	float: left;
+	width: auto;
+	list-style-type:none;
+	text-align: center;
+	margin: .1em .5%  .1em;
+	text-transform: uppercase;
+}
+
+.menu>li >a{
+	display:inline-block;
+	margin-top: .2em;
+	font-size: 1em;
+	font-style: italic;
+	text-decoration: none;
+	color:#0E230A ;
+	display:inline-block;
+	padding: .3em;
+	transition: .5s;
+}
+
+.hidden{
+	position:absolute;
+	padding: 0;
+	margin-top:0px;
+	z-index: 1;
+}
+.hidden >li{
+	display:none;
+	text-align:left;
+	float: none;
+	font-size: .2em;
+}
+.hidden>li>a{
+	margin-top: .2em; 
+	display:block;
+	font-size: 16px;
+	font-style: italic;
+	text-decoration: none;
+	color:#0E230A ;
+	display:inline-block;
+	padding: .3em;
+	transition: .8s;
+	
+}
+.menu >li a:hover{
+	background-color: #96F086;
+	border-radius: .4em;
+}
+.menu >li:hover .hidden li{
+	position: relative;
+	display:block;
+	float:none;
+}
+.hidden li >a:hover .menu >li{
+	background-color: #96F086;
+	border-radius: .4em;
+}
+
+/**************************************************slide menu********/
+#slide_show ,#update-menu{
+	position:relative;
+	margin-top:1.5em;
+	padding: 2em;
+	text-align: center;
+}
+.slide{
+	box-shadow: 0 0 5px 5px black;
+	padding: 2em;
+	margin: 2em;
+}
+/**********************************end slide*************************/
+
+/***********************course*********************************/
+.course{
+	position: relative;
+	background-color: rgb(233, 243, 233);
+	margin-bottom: 1em;
+	border: 1px solid re;
+}
+.course-heading{
+	text-align: center;
+	background-color: rgb(97, 110, 223);
+	padding: .5em;
+}
+.course-heading>span{
+	font-size: 2.2em;
+	letter-spacing: .2em;
+	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	text-transform: uppercase;
+	color:  rgb(233, 243, 233);
+}
+
+.online-course{
+	position: relative;
+	border: .5px solid rgb(97, 110, 223);
+	width: 40%;
+	height:15em;
+	margin:1em 5% 2em;
+	float: left;
+}
+.offline-course{
+	position: relative;
+	border: .5px solid rgb(97, 110, 223);
+	width: 40%;
+	height: 15em;
+	margin:1em 55% 2em;
+}
+.online-course::before{
+	content: ' ';
+	position: absolute;
+	width: 100%;
+	height:100%;
+	background-image: url(courseImg/onlineCourse.jpg);
+	opacity: .5;
+	-ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+	background-size:cover;
+	
+
+}
+.offline-course::before{
+	content: ' ';
+	position: absolute;
+	width: 100%;
+	height:100%;
+	background-image: url(courseImg/offlineCourse.jpeg);
+	opacity: .5;
+	-ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+	background-size:cover;
+	
+
+}
+.online-course>div,.offline-course>div{
+	text-align: center;
+	margin-top: 9em;
+	background-color:#A58687;
+}
+.online-course>div>a,.offline-course>div>a{
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 2em;
+	bottom: 0;
+	color:#0E5ACE;
+	letter-spacing: .2em;
+	cursor: pointer;
+}
+.online-course>div>a:hover,.offline-course>div>a:hover{
+	color: red;
+}
+.online-course-details,.offline-course-details{
+	position:relative;
+	height: 42em;
+	margin: 5em;
+	background-color: rgb(180, 185, 168);
+	display: none;
+	box-shadow: 0 0 5px 5px red;
+}
+.col1{
+	padding: .1em;
+	margin: 4%;
+	height: 14em;
+	width: 25%;
+	border: 1px solid rgb(45, 45, 143);
+	float: left;
+	box-sizing: border-box;
+}
+.col1>a>img{
+	height: 70%;
+	width: 100%;
+}
+.col1>a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	font-family: 'Courier New', Courier, monospace;
+	letter-spacing: .1em;
+	color:black;
+}
+
+.col1:hover{
+	box-shadow: 0 0 2px 2px;
+}
+.show{
+	display: block;
+}
+/***********************end course*********************************/
+
+
+/****************************update menu*******************/
+#update-menu{
+	position:relative;
+	margin-top:3em;
+	padding: 0em;
+	text-align: center;
+	height: 15em;
+}
+.section1{
+	position: relative;
+	height: 10em;
+	width: 30%;
+	margin: 2em 1.2em 0 ;
+	float: left;
+	overflow:hidden;
+	background-color: #82E0AA;
+	color: #C0392B;
+	border-radius: 10%;
+}
+/**************************** end update menu*******************/
+/****************************start others links*******************/
+.others-link{
+	float: left;
+	display: block;
+	width: 15%;
+	margin: 2em 1.3em 1em;
+	padding: .6em;
+
+}
+.others-link a{
+	text-decoration: none;
+	text-transform: uppercase;width: 100%;
+	font-size: 1.5em;
+	font-style: italic;
+	padding: .5em 1em .5em ;
+
+}
+.others-link a:hover{
+	text-shadow:5px 2px 10px red;
+
+}
+/****************************end  others links*******************/
+/*****************footer********************/
+.footer1{
+	position: relative;
+	margin: 2em 1em 0;
+	padding: 2em;
+	height: 13em;
+	background-color: #3E403B  ;
+}
+.footer1 .footer-sec{
+	width: 33%;
+	padding: 0;
+	display: block;
+	position: relative;
+	background: transparent;
+	float: left;
+	color: #FDFEFE;
+	text-align: center;
+}
+.footer1 .footer-sec h4{
+	margin: 0;
+}
+.copyright{
+	margin-top: 10em;
+}
+.number ,.email{
+	text-decoration: none;
+	color: #FDFEFE;
+	margin-top: 1em;
+}
+
+/*****************end footer********************/
